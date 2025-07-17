@@ -1164,26 +1164,6 @@ body {
     }
 }
 
-.spacing-responsive {
-    margin-top: 20px; /* Default spacing for desktop */
-}
-
-/* Mobile devices (phones) */
-@media screen and (max-width: 768px) {
-    .spacing-responsive {
-        margin-top: 15px; /* Slightly less spacing on mobile */
-    }
-}
-
-/* Tablets */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .spacing-responsive {
-        margin-top: 18px; /* Medium spacing for tablets */
-    }
-}
-
-
-
 
 
         
@@ -1527,6 +1507,17 @@ We enjoyed lots of adda, fun games for both kids and adults, and a variety of cu
                     <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="form-group">
+                    <select name="attendance" required>
+                        <option value="">Will you attend?</option>
+                        <option value="yes">Joyfully Accept</option>
+                        <option value="no">Regretfully Decline</option>
+                    </select>
+                </div>
+                <!--<div class="form-group">
+                    <input type="number" name="guests" placeholder="Number of Guests" min="1" max="2">
+                </div> -->
+                
+                <div class="form-group">
                     <textarea name="message" placeholder="Dietary restrictions or special requests"></textarea>
                 </div>
                 <button type="submit" class="rsvp-btn">Send</button>
@@ -1534,9 +1525,6 @@ We enjoyed lots of adda, fun games for both kids and adults, and a variety of cu
         </div>
     </div>
 </section>
-
-
-
     
 
 

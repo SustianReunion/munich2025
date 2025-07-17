@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSTian Reunion - August 02, 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+    /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-center-container {
+    padding-top: 90px; /* Reduced from 100px */
+    padding-bottom: 30px; /* Reduced from 10px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #faf8f5;
+
+}
+
+.couple-names {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.name, .ampersand-large {
+    display: inline;
+    text-align: left;
+    margin: 0 0.2rem;
+}
+
+.knot-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #2E7D32;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.small-hero-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Remove or comment out the old styles */
+/*
+.small-hero-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 60%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+*/
+
+/* Add new banner styles */
+.hero-banner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 1rem auto 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.banner-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.banner-photo:hover {
+    transform: scale(1.02);
+}
+
+
+
+/* Reduce top padding of the next section */
+.hero {
+    min-height: 5vh;
+    padding-top: 10px; /* Reduced from default */ /* Reduced from 20px */
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(135deg, var(--cream) 0%, #E8F5E8 100%);
+    overflow: hidden;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .hero-banner {
+        max-width: 95%;
+        height: 200px; /* Increase from current mobile height */
+        margin: 1rem auto 0 auto;
+    }
+    
+    .banner-photo {
+        border-radius: 10px;
+        height: 200px; /* Match the container height */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+    
+    
+     .hero-center-container {
+        padding-bottom: 30px; /* Even less spacing on mobile */ 
+        padding-top: 100px; /
+    }
+    
+    
+    .hero {
+        padding-top: 5px; /* Less padding on mobile */
+    }
+}
+
+
+.hero-content,
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.reunion-celebration,
+.reunion-date,
+.reunion-location {
+    text-align: left;
+    width: 100%;
+}
+
+.countdown-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* HERO FLEX LAYOUT */
+.hero-flex {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0 40px 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.hero-left {
+    flex: 0 1 45%;
+    min-width: 320px;
+    margin-left: 2vw;
+}
+
+.hero-right {
+    flex: 0 1 55%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+
+/* HEART TEXT STYLING - FIXED */
+.heart {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-right: -60px;
+    padding-right: 80px;
+}
+
+.heart::before,
+.heart::after {
+    display: none;
+}
+
+.heart-text {
+    position: relative;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light);
+    text-align: left;
+    line-height: 1.6;
+    padding: 0;
+    word-break: break-word;
+    pointer-events: none;
+    max-width: 400px;
+    margin-left: auto;
+    padding-left: 60px;
+    margin-right: -40px;
+}
+
+.heart::before,
+.heart::after {
+    display: none;
+}
+
+.heart-text {
+    position: relative;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light);
+    text-align: left;
+    line-height: 1.6;
+    padding: 0;
+    word-break: break-word;
+    pointer-events: none;
+    max-width: 400px;
+    margin-left: auto;
+    padding-left: 60px;
+    margin-right: -40px;
+}
+
+:root {
+    --primary-color: #2E7D32; /* Forest Green */
+    --secondary-color: #81C784; /* Light Green */
+    --accent-color: #E8F5E8; /* Very Light Green */
+    --text-dark: #2C2C2C;
+    --text-light: #666;
+    --white: #FFFFFF;
+    --cream: #F1F8E9; /* Light Green Cream */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--cream);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation - FIXED */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.initials {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.ampersand {
+    color: var(--secondary-color);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 3px 0;
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+/* MOBILE MENU STYLES - STATIC PLATFORM COMPATIBLE */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 0;
+        z-index: 1000;
+        border-radius: 0 0 15px 15px;
+        list-style: none;
+        margin: 0;
+        /* REMOVED ALL PROBLEMATIC ANIMATIONS */
+    }
+    
+    .nav-menu.active {
+        display: flex !important;
+        /* SIMPLE DISPLAY TOGGLE ONLY */
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-menu a {
+        padding: 1rem 2rem;
+        display: block;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        color: var(--text-dark);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-menu a:hover {
+        background: rgba(46, 125, 50, 0.1);
+        color: var(--primary-color);
+    }
+    
+    .nav-menu a::after {
+        display: none;
+    }
+}
+
+/* Hero Section */
+.hero {
+    min-height: 5vh;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(135deg, var(--cream) 0%, #E8F5E8 100%);
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(46, 125, 50, 0.1) 0%, transparent 50%);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+    padding: 100px 50px 50px;
+    z-index: 2;
+}
+
+.couple-names {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+.name {
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+.ampersand-large {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #81C784;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin: 0 0.5rem;
+    vertical-align: middle;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.small-hero-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.reunion-celebration {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.reunion-date {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.reunion-location {
+    font-size: 1.2rem;
+    color: #81C784;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.countdown-container {
+    margin-top: 2rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 2rem;
+}
+
+.countdown-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.couple-photo {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px rgba(46, 125, 50, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.couple-photo:hover {
+    transform: scale(1.02) rotate(1deg);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.scroll-arrow {
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    40% {
+        transform: translateY(-10px) rotate(45deg);
+    }
+    60% {
+        transform: translateY(-5px) rotate(45deg);
+    }
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 80px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.welcome-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Section Titles */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+}
+
+/* Story Section */
+.story-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.story-timeline {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 4rem;
+}
+
+.timeline-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.timeline-date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    min-width: 100px;
+    text-align: center;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex: 1;
+}
+
+.timeline-item.reverse .timeline-content {
+    flex-direction: row-reverse;
+}
+
+.timeline-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.timeline-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.timeline-image img:hover {
+    transform: scale(1.05);
+}
+
+.timeline-text {
+    flex: 1;
+}
+
+.timeline-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.timeline-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* Details Section */
+.details-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.detail-card {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--cream);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-10px);
+}
+
+.detail-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.detail-time {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.detail-location {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Video Section */
+.video-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Registry Section */
+.registry-section {
+    padding: 100px 0;
+    background: var(--white);
+    text-align: center;
+}
+
+.registry-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.registry-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.registry-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.registry-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.registry-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+}
+
+/* RSVP Section */
+.rsvp-section {
+    padding: 100px 0;
+    background: var(--cream);
+}
+
+.rsvp-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rsvp-text {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.rsvp-btn {
+    padding: 18px 40px;
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+}
+
+.rsvp-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.footer-names {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-date {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    color: #AAA;
+}
+
+/* MOBILE RESPONSIVE DESIGN - FIXED */
+@media (max-width: 1000px) {
+        
+    .hero-flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 1px 20px 20px 20px; /* Reduced top padding from 60px 20px 30px 20px */
+        
+        /*max-width: 95%; /* Even narrower on tablets */
+    }
+    
+    .hero-left, .hero-right {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .hero-right {
+        margin-top: 2rem;
+    }
+    
+    .heart {
+        max-width: 90%;
+        padding: 1.5rem;
+        justify-content: center;
+        margin: 0 auto;
+        margin-right: 0;
+        padding-right: 1.5rem;
+    }
+    
+    .heart-text {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        max-width: 100%;
+    }
+}
+
+/* Center text on mobile only */
+@media (max-width: 768px) {
+    .couple-names {
+        text-align: center !important;
+    }
+    
+    .name {
+        text-align: center !important;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 20px 50px;
+    }
+    
+    .couple-names {
+        font-size: 3rem;
+    }
+    
+    .countdown {
+        gap: 1rem;
+    }
+    
+    .timeline-item,
+    .timeline-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline-date {
+        writing-mode: horizontal-tb;
+        margin-bottom: 1rem;
+    }
+    
+    .timeline-content,
+    .timeline-item.reverse .timeline-content {
+        flex-direction: column;
+    }
+    
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .registry-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heart {
+        max-width: 95%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    
+    .heart-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-flex {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .hero-left {
+        flex: 1;
+    }
+    
+    .hero-right {
+        flex: 1;
+        margin-top: 0;
+    }
+    
+    .heart {
+        max-width: 100%;
+        justify-content: center;
+    }
+    
+    .heart-text {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+/* Photo Gallery Section */
+.gallery-section {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.gallery-preview {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.preview-item {
+    aspect-ratio: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: translateY(-10px);
+}
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-link-container {
+    background: var(--cream);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-description {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.gallery-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3); 
+    margin-bottom: 1rem;
+}
+
+.gallery-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(46, 125, 50, 0.4);
+}
+
+.gallery-note {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .preview-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+    
+    .gallery-link-container {
+        padding: 2rem 1rem;
+    }
+}
+
+    </style>
+    
+</head>
+<body>
+    <!-- HERO CENTERED SECTION -->
+    <div class="hero-center-container">
+        <h1 class="couple-names">
+            <span class="name">SUSTian Reunion 2025</span>
+            <!--span class="ampersand-large">&</span -->
+            <!--span class="name">2025</span-->
+        </h1>
+        <div class="knot-date">August 2, 2025, Munich, Germany</div>
+        <!--div class="hero-image">
+            <img src="https://drive.google.com/thumbnail?id=1FeFaF_ZRmqf2FVJXOGg2f5ckFl1HB-3y&sz=w800" 
+                 alt="SUSTian Reunion" 13IK44hhVFFEXysJRY9qcO2qJN59kbvj4   1LjeCnurCEfI_PJFY59QrTaS9U_gY4iyV
+                 class="small-hero-photo">
+        </div-->
+        <!-- UPDATED CODE -->
+<div class="hero-banner">
+    <img src="https://drive.google.com/thumbnail?id=1LjeCnurCEfI_PJFY59QrTaS9U_gY4iyV&sz=w1200" 
+         alt="SUSTian Reunion Banner" 
+         class="banner-photo">
+</div>
+
+
+        
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="initials">SUSTian DE</span>
+                <!--span class="ampersand">&</span>
+                <span class="initials">M</span-->
+            </div>
+<ul class="nav-menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#our-story">Our Story</a></li>
+    <li><a href="#photos">Photos & Videos</a></li>
+     <li><a href="#details">Details</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Countdown -->
+    <!--section id="home" class="hero"-->
+        <!--div class="hero-overlay"></div -->
+        
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-flex">
+            <div class="hero-left">
+                <div class="reunion-celebration">SUSTian reunion</div>
+                <div class="reunion-date">August 2, 2025</div>
+                <div class="reunion-location">Celebration starts in...</div>
+                <div class="countdown-container">
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">0</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">0</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">0</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="heart">
+                    <div class="heart-text">
+                        সাস্টের ছায়ায় কেটেছে তরুণ বেলা,<br>
+                        আজ পুনর্মিলনে মিলেছি সবাই।<br> 
+                        স্মৃতির মালায় গাঁথা সেই দিনগুলো,<br>
+                        হৃদয়ে বাজে চিরকাল সাস্টের জয়গান।
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Welcome Message -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-content">
+                <h2 class="welcome-title">শাহজালাল বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় ও জার্মানিতে পুনর্মিলনী</h2>
+                <div class="welcome-text">
+                    <p><strong>স্মৃতির সিলেট থেকে জার্মানির মাটিতে</strong></p>
+                    
+                    <p>সিলেটের সবুজ পাহাড়ে, কুমারগাঁওয়ের ছায়ায়,<br>
+                    শাহজালাল বিশ্ববিদ্যালয়ে কেটেছে সোনালী দিনগুলো।<br>
+                    পদার্থ, রসায়ন, অর্থনীতির সেই প্রথম যাত্রা,<br>
+                    ১৯৯১ সালের ১৩ ফেব্রুয়ারি থেকে শুরু হয়েছিল স্বপ্নের গল্প।</p>
+                    
+                    <p>ত্রিকোণাকার লাইব্রেরির ছায়ায় বসে,<br>
+                    পড়েছি বই, দেখেছি স্বপ্ন বিজ্ঞানের জগতে।<br>
+                    শহীদ মিনারের পাদদেশে দাঁড়িয়ে,<br>
+                    শপথ নিয়েছি দেশের সেবায় নিজেকে নিয়োজিত করার।</p>
+                    
+                    <p><strong>জার্মানির মাটিতে পুনর্মিলন</strong></p>
+                    
+                    <p>জার্মানির  মিউনিখ শহরে, আল্পস পর্বতমালার পাদদেশে,<br>
+                    একত্রিত হচ্ছি আমরা, সাস্টের সন্তানেরা।<br>
+                    ইউরোপের বিভিন্ন প্রান্ত থেকে এসে,<br>
+                    মিলিত হচ্ছি "সুহাগ" রেস্টুরেন্টে ।</p>
+                  
+                    <p><strong>স্মৃতিচারণ</strong></p>
+                    
+                    <p>মনে পড়ে সেই দিনগুলো, যখন আমরা ছিলাম তরুণ,<br>
+                    স্বপ্ন ছিল আকাশ ছোঁয়ার, জ্ঞানের আলোয় আলোকিত হওয়ার।<br>
+                    সেমিস্টার সিস্টেমের প্রথম পথিকৃৎ ছিল আমাদের বিশ্ববিদ্যালয়,<br>
+                    আমেরিকান ক্রেডিট সিস্টেমে শিক্ষার নতুন দিগন্ত খুলে দিয়েছিল।</p>
+                    
+                    <p>কম্পিউটার সেন্টারে প্রথম ইন্টারনেটের স্পর্শ,<br>
+                    বাংলা আর ইংরেজি ভাষার বাধ্যতামূলক কোর্স।<br>
+                    গবেষণার জগতে প্রথম পদক্ষেপ,<br>
+                    আন্তর্জাতিক মানের শিক্ষার স্বাদ পেয়েছিলাম সেখানে।</p>
+                    
+                    <p><strong>আজকের অনুভূতি</strong></p>
+                    
+                    <p>আজ বিদেশের মাটিতে দাঁড়িয়ে,<br>
+                    মনে হচ্ছে যেন ফিরে গেছি সেই সোনালী দিনগুলোতে।<br>
+                    বাংলাদেশি খাবারের সুগন্ধে,<br>
+                    ভরে উঠেছে হৃদয় দেশের মায়ায়।</p>
+                    
+                    <p>যারা ছড়িয়ে আছি ইউরোপের বিভিন্ন প্রান্তে,<br>
+                    গবেষণা আর কর্মক্ষেত্রে নিজেদের প্রতিষ্ঠিত করেছি,<br>
+                    আজ এক ছাদের নিচে মিলিত হয়ে,<br>
+                    অনুভব করছি সেই পুরানো বন্ধুত্বের উষ্ণতা।</p>
+                    
+                    <p><strong>শেষের কথা</strong></p>
+                    
+                    <p>সাস্টের গর্বিত সন্তান আমরা,<br>
+                    যেখানেই থাকি না কেন, যে দেশেই কাজ করি না কেন।<br>
+                    আমাদের শিকড় রয়ে গেছে সেই সিলেটের মাটিতে,<br>
+                    শাহজালাল বিশ্ববিদ্যালয়ের সবুজ ক্যাম্পাসে।</p>
+                    
+                    <p>আজকের এই পুনর্মিলনী শুধু একটি অনুষ্ঠান নয়,<br>
+                    এ যেন এক আত্মার মিলন, স্মৃতির পুনর্জাগরণ।<br>
+                    জার্মানির মাটিতে বাংলাদেশের সুর,<br>
+                    সাস্টের গৌরবগাথা আজও অম্লান।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="story-section">
+        <div class="container">
+            <h2 class="section-title">Story of our journey</h2>
+            <div class="story-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">First reunion</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://drive.google.com/thumbnail?id=11FsSfawRfjiovU7lMglrgq9oPABZeZdk&sz=w1200" alt="First reunion"> 
+                        </div>
+                        <div class="timeline-text">
+                            <h3>First reunion</h3>
+                            <p style="text-align: justify;">The maiden chapter of our SUSTian DE reunion unfolded in 2014, marking the beginning of a wonderful journey together. It all started in Karlsruhe, where a small but enthusiastic group of SUSTians gathered to reconnect, share memories, and celebrate our shared heritage.
+                            Over the years, our community has grown, and each reunion has become a cherished tradition, bringing together friends and families from across Europe. These gatherings are filled with laughter, adda, games, cultural performances, and, of course, delicious deshi food, strengthening the bonds within our SUSTian family.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reverse">
+                    <div class="timeline-date">Second reunion</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://drive.google.com/thumbnail?id=1GXxLqsFXxgKrq4N9Swgp4rBzxbe2X5bS&sz=w1200" alt="Second reunion"> 
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Second reunion</h3>
+                            <p style="text-align: justify;">We gathered for our second reunion in Fürth in 2018, marking another milestone in our growing SUSTian community. Friends and families traveled from different parts of Germany to join the celebration, making it a truly special occasion.
+
+The day was filled with cheerful adda, laughter, and a variety of cultural performances that highlighted our shared heritage. Everyone enjoyed a delicious spread of Bengali food, which added a comforting touch of home to the festivities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Third reunion</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://drive.google.com/thumbnail?id=1evJGuVfjFZvg9iJvevX889A4DTS0WdZK&sz=w1200" alt="Third reunion"> 
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Third reunion</h3>
+                            <p style="text-align: justify;">Stuttgart welcomed us for our 3rd reunion in 2023, and it was truly a memorable event. Around 100 SUSTians and their family members attended, making it one of our largest gatherings yet. The atmosphere was vibrant, filled with laughter and the warmth of old friendships rekindled.
+
+We enjoyed lots of adda, fun games for both kids and adults, and a variety of cultural programs that showcased the diverse talents within our community. The highlight for many was the delicious Bangladeshi food, which brought a taste of home to everyone present.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reverse">
+                    <div class="timeline-date">Fourth reunion</div>
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="https://drive.google.com/thumbnail?id=1b0Sef6JojVZKMS6HGCT6fhE5NTGTA1Yd&sz=w1200" alt="Floveth reunion">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Fourth reunion</h3>
+                            <p style="text-align: justify;">This year, we are excited to organize our fourth reunion in Munich. The vibrant city will provide the perfect backdrop for reconnecting with old friends and welcoming new faces into our SUSTian family. We have planned a variety of activities, including cultural performances, games, and group outings to Eibsee, to ensure everyone has a memorable experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <!-- Photo Gallery Section -->
+<section id="photos" class="gallery-section">
+    <div class="container">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="gallery-preview">
+            <!-- Preview images from individual photos -->
+            <div class="preview-grid">
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=1G3_Lk3HAck7x5B7DZHBzgDXI8oSEScNE&sz=w400" alt="Photo 1"> 
+                </div>
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=1kZ35dhsbGIkGEoDpJlMgNgLWcNbUtJsh&sz=w400" alt="Photo 2">
+                </div>
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=11o48TKmZJTp1Oq5cny7oY_eZ8yaqtdBV&sz=w400" alt="Photo 3"> 
+                </div>
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=1TuocYgrdZAjoF2r18qTIlXdSaqrIhiTQ&sz=w400" alt="Photo 4"> 
+                </div>
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=1i-ygi3U94jH1dn4znccG55FiacZEChJZ&sz=w400" alt="Photo 5"> 
+                </div>
+                <div class="preview-item">
+                    <img src="https://drive.google.com/thumbnail?id=1DXgH8uDbq3frRUCWXSaSG-qRmD8cz-0p&sz=w400" alt="Photo 6">
+                </div>
+            </div>
+            
+            <!-- Link to full Google Drive folder -->
+            <div class="gallery-link-container">
+                <p class="gallery-description">
+                    Click below to view more photo and video collection from our previous reunion
+                </p>
+                <a href="https://drive.google.com/drive/folders/1qcaMtXP3ArlevKeig_MPbXqim882OPX3?usp=drive_link"
+                   target="_blank" 
+                   rel="noopener" 
+                   class="gallery-btn">
+                    📸 View All Photos and Videos 📹
+                </a>
+                <p class="gallery-note">
+                    Photos and videos will open in Google Drive
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- reunion Video -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Previous reunion video</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/IToRwZ1NcxM"
+                    title="SUSTian Reunion Video"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- reunion Details -->
+    <section id="details" class="details-section">
+        <div class="container">
+            <h2 class="section-title">Event Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">📍</div>
+                    <h3>Location</h3>
+                    <p class="detail-time">2:00 PM</p>
+                    <p class="detail-location">Restaurant Suhag<br>St.-Martin-Straße 58-68<br>81541 München, Germany</p>
+                    <div class="map-embed" style="margin-top:1em;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5327.192988713348!2d11.5945852!3d48.1180191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf9de41a3e7d%3A0xb2d1eef2a8be73f1!2sRestaurant%20Suhag!5e0!3m2!1sen!2sch!4v1751118373729!5m2!1sen!2sch" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">🥘</div>
+                    <h3>Dinner</h3>
+                    <p class="detail-time">7:00 PM</p>
+                    <p class="detail-location">Restaurant Suhag<br>St.-Martin-Straße 58-68<br>81541 München, Germany</p>
+                    <div class="location-link" style="margin-top:1em;">
+                        <a href="https://www.restaurantsuhag-muenchen.de/" target="_blank" rel="noopener" style="color:#8B4B8C;font-weight:600;text-decoration:underline;">
+                            Visit Restaurant Suhag Website
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">🎭</div>
+                    <h3>Events</h3>
+                    <p class="detail-time">Bengali cultural show</p>
+                    <p class="detail-location" style="text-align: justify;">We will have adda, cultural program, games and many more. On Sunday we will enjoy the beauty of the Bavarian Alps at Eibsee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="rsvp-section">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="rsvp-content">
+            <!-- p class="rsvp-text">Please respond by May 1, 2025</p> -->
+            <form class="rsvp-form" action="https://formspree.io/f/mwpbaybg" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <!-- div class="form-group">
+                    <select name="attendance" required>
+                        < option value="">Will you attend?</option>
+                        <option value="yes">Joyfully Accept</option>
+                        <option value="no">Regretfully Decline</option -->
+                    </select>
+                </div>
+                <!--<div class="form-group">
+                    <input type="number" name="guests" placeholder="Number of Guests" min="1" max="2">
+                </div> -->
+                
+                <div class="form-group">
+                    <textarea name="message" placeholder="Dietary restrictions or special requests"></textarea>
+                </div>
+                <button type="submit" class="rsvp-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-names">SUSTian Reunion</div>
+                <div class="footer-date">© 2025</div>
+                <p class="footer-text">Created by Sumanta Barman</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+// Countdown Timer
+function updateCountdown() {
+    const reunionDate = new Date('August 2, 2025 16:00:00').getTime();
+    const now = new Date().getTime();
+    const distance = reunionDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+
+    if (distance < 0) {
+        document.getElementById('countdown').innerHTML = "<h3>The Event Has Started! 💕</h3>";
+    }
+}
+
+// Update countdown every minute
+setInterval(updateCountdown, 60000);
+updateCountdown();
+
+// Mobile Menu Toggle - STATIC PLATFORM COMPATIBLE
+document.addEventListener('DOMContentLoaded', function() {
+    var mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    var navMenu = document.querySelector('.nav-menu');
+    var navContainer = document.querySelector('.nav-container');
+
+    if (mobileMenuToggle && navMenu) {
+        // Simple toggle function
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Simple class toggle
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                navMenu.classList.add('active');
+                mobileMenuToggle.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Close menu when clicking on navigation links
+        var navLinks = document.querySelectorAll('.nav-menu a');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (navContainer && !navContainer.contains(event.target)) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});
+</script>
+
+
+</body>
+</html>
